@@ -68,7 +68,7 @@ Given a general nonlinear dynamical system $\dot{x} = f(x)$, $x \in \mathcal{X} 
 Without loss of generality, let $x=0$ be an equilibrium state.
 Let $V:\mathbb{R}^n \rightarrow \mathbb{R}$ be a scalar function that is continuous, and has continuous first derivatives.
 Then the origin $x=0$ is Lyapunov stable if:
-- $V(0) = 0
+- $V(0) = 0$
 - $V(x) > 0 \, \forall x\in\mathcal{X} \setminus \{ 0\}$
 - $\dot{V}(x) = \nabla V(x)^Tf(x) \leq 0\, \forall  x\in\mathcal{X}$
 ```
