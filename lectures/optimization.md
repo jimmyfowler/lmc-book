@@ -39,7 +39,7 @@ If $f$ is not differentiable, or evaluating $f$ is an expensive process (e.g., r
 
 ### Gradient descent
 One of the most popular and simplest approach is gradient descent.
-If $f$ is nice smooth differentiable function where it is possible, and hopefully cheap, to compute $\nabla f(x)$, the *gradient* of $f$, then we can simply update our value of $x$ by moving moving in the direction og steepest descent.
+If $f$ is nice smooth differentiable function where it is possible, and hopefully cheap, to compute $\nabla f(x)$, the *gradient* of $f$, then we can simply update our value of $x$ by moving moving in the direction of steepest descent.
 Mathematically, if $\alpha$ is a step size, and $x_k$ is the current guess for the optimal solution, then we can update our guess by applying the update rule,
 
 $$
