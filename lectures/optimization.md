@@ -111,7 +111,7 @@ There are a few ways to go about handling these constraints. Again, we won't be 
 
 - **Treat constraints as (big) penalties in the objective**: We can add the constraint functions as part of the objective function so that there is a high cost then the constraints are violated. This turns the constrained problem into an unconstrained one, but then you have to carefully tune the weightings on the constraints, and there is no guarantee that the constraints will be perfectly satisfied.
 
-- **Log-barrier**: A version of the approach above expects that a log function is applied on the constraint so that the cost approaches infinity as $x$ approaches the infeasible region. See homework 1.
+- **Log-barrier**: A version of the approach above except that a log function is applied on the constraint so that the cost approaches infinity as $x$ approaches the infeasible region. See homework 1.
 ```
 
 
