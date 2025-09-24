@@ -105,13 +105,13 @@ What are some ways you could go about handling these constraints?
 
 There are a few ways to go about handling these constraints. Again, we won't be going into depth here, but we are briefly mentioning these approaches in case you want to read more about them.
 
-- **Projected gradient descent**: Take a gradient descent step as normal, and then project the solution back to the closest feasible point in the feasible set. This projection may involve solving another optimization problem(!) but for certain geometries of the feasible set, the projection could be found in closed form.
+- **Projected gradient descent**: Take a gradient descent step as normal, and then project the solution back to the closest feasible point in the feasible set. This projection may involve solving another optimization problem(!), but for certain geometries of the feasible set, the projection could be found in closed form.
 
-- **Use the Lagrangian**: A special way to convert a constrained optimization problem into an unconstrained one. But this is performed in a specific way where *Lagrangian multipliers* are introduced, and the neccesary conditions for optimality are given by the *Karush–Kuhn–Tucker (KKT) conditions*. There are duality connections between the lagrangian (dual problem) and the original problem (primal problem) where solving the dual problem gives you insight about the primal problem.
+- **Use the Lagrangian**: A special way to convert a constrained optimization problem into an unconstrained one. But this is performed in a specific way where *Lagrangian multipliers* are introduced, and the necessary conditions for optimality are given by the *Karush–Kuhn–Tucker (KKT) conditions*. There are duality connections between the Lagrangian (dual problem) and the original problem (primal problem), where solving the dual problem gives you insight about the primal problem.
 
-- **Treat constraints as (big) penalities in the objective**: We can add the constraint functions as part of the objective function so that there is a high cost then the constraints are violated. This turns the constrained problem into an unconstrained one, but then you have to carefully tune the weightings on the constraints, and there is not guarantee that the constraints will be perfectly satisfied.
+- **Treat constraints as (big) penalties in the objective**: We can add the constraint functions as part of the objective function so that there is a high cost then the constraints are violated. This turns the constrained problem into an unconstrained one, but then you have to carefully tune the weightings on the constraints, and there is no guarantee that the constraints will be perfectly satisfied.
 
-- **Log-barrier**: A version of the approach above expect that a log function is applied on the constraint to so that the cost approaches infinity as $x$ approaches the the infeasible region. See homework 1.
+- **Log-barrier**: A version of the approach above expects that a log function is applied on the constraint so that the cost approaches infinity as $x$ approaches the infeasible region. See homework 1.
 ```
 
 
