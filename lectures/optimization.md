@@ -52,7 +52,7 @@ What are some practical considerations when performing gradient descent?
 ```
 
 ```{margin} Convex Optimization
-The textbook [Convex Optimization](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf) by Lieven Vandenberghe and Stephen P. Boyd is to go-to text for learning about convex optimization. Lectures of 2023 Stanford EE 364a [course offering are on Youtube](https://youtu.be/kV1ru-Inzl4?si=S2Nf1e1gu_M6H2zq).
+The textbook [Convex Optimization](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf) by Lieven Vandenberghe and Stephen P. Boyd is the go-to text for learning about convex optimization. Lectures of 2023 Stanford EE 364a [course offering are on Youtube](https://youtu.be/kV1ru-Inzl4?si=S2Nf1e1gu_M6H2zq).
 ```
 
 ```{admonition} Practical considerations
@@ -60,8 +60,8 @@ The textbook [Convex Optimization](https://web.stanford.edu/~boyd/cvxbook/bv_cvx
 
 
 We need to be careful about how to pick $\alpha$; if it is too small, then you may need to take many steps, but if it's too big, you may struggle to converge to a (local) optimum.
-We can perform [line search](https://optimization.cbe.cornell.edu/index.php?title=Line_search_methods) where you search in the along the direction to find a suitable step size.
-There are more advanced techniques that consider the *momentum** that can adaptive change $\alpha$ based on the geometry of $f$. We won't discuss further here, but [Algorithms for Optimization](https://mykel.kochenderfer.com/textbooks/) touches on this and has some useful references.
+We can perform a [line search](https://optimization.cbe.cornell.edu/index.php?title=Line_search_methods) where you search along the steepest descent direction to find a suitable step size.
+There are more advanced techniques that consider the *momentum** that can adaptively change $\alpha$ based on the geometry of $f$. We won't discuss further here, but [Algorithms for Optimization](https://mykel.kochenderfer.com/textbooks/) touches on this and has some useful references.
 
 
 
@@ -71,7 +71,7 @@ Just because the objective is differentiable does not mean you will always find 
 
 
 However, if $f$ is *convex*, loosely speaking, "bowl-shaped", then that implies that any minimum found is the global minimum. We won't go into too much detail into convex optimization, but we will use the fact later on that *quadratic* and *linear* functions are convex.
-But if your problem is convex, then generally (in most cases), this is tractable to solve, and there are many well-support tools and solvers for solving convex optimization problems. In this course, we will use [`cvxpy`](https://www.cvxpy.org/).
+But if your problem is convex, then generally (in most cases), this is tractable to solve, and there are many well-supported tools and solvers for solving convex optimization problems. In this course, we will use [`cvxpy`](https://www.cvxpy.org/).
 ```
 
 
